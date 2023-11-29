@@ -11,8 +11,6 @@
     "format": "prettier -w src"
   },
   "dependencies": {
-    "@plasmohq/messaging": "^0.5.0",
-    "@plasmohq/storage": "^1.9.0",
     "plasmo": "0.83.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -37,8 +35,7 @@
       "https://*/*"
     ],
     "permissions": [
-      "tabs",
-      "tabGroups"
+      "tabs"
     ]
   },
   "engines": {
@@ -51,5 +48,5 @@
         "browsers": "last 2 versions, not dead, > 0.2%"
       }
     }
-  }  
+  }
 }
