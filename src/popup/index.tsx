@@ -25,7 +25,7 @@ function IndexPopup() {
       const names = e.target.value
         .split(/\s+/)
         .filter((name): name is keyof typeof kanbans => name in kanbans)
-        .sort((a, b) => kanbans[b].level - kanbans[a].level)
+        .sort((a, b) => kanbans[a].level - kanbans[b].level)
       setNames(names)
     },
     []
@@ -38,11 +38,11 @@ function IndexPopup() {
           onChange={onChangeHandler}
           id="message"
           rows={4}
-          className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+          className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
           placeholder="ここに適当にペースト"></textarea>
         <button
           type="submit"
-          className="mt-2 rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-auto">
+          className="ring-offset-background border-input bg-background mt-2 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium hover:bg-gray-100">
           かんばんを開く
         </button>
       </form>
