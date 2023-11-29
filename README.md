@@ -7,7 +7,7 @@ $ corepack prepare pnpm@8.10.3 --activate
 # モジュールのインストール
 $ pnpm install
 # 開発コマンド
-$ pnpm build
+$ pnpm dev
 ```
 
-`build/chrome-mv3-prod`が生成されるので、`chrome://extensions`にアクセスして、デベロッパーモードをオンにして、パッケージ化されていない拡張機能を読み込む、で読み込んでください。
+`chrome://extensions`にアクセスして、デベロッパーモードをオンにして、パッケージ化されていない拡張機能を読み込む、で`build/chrome-mv3-prod`を読み込んでください。
